@@ -1,0 +1,44 @@
+public class Student {
+
+    public static void main(String[] args) {
+
+        Student s1 = new Student();
+        Student s2 = new Student("Tabrej");
+        Student s3 = new Student("Tabrej", 19);
+
+        s1.display();
+        s2.display();
+        s3.display();
+
+    }
+
+    String name;
+    int age;
+
+    Student() {
+
+        this.name = "Unknown";
+        this.age = 0;
+
+    }
+
+    Student(String name) {
+
+        this.name = name;
+        this.age = 0;
+
+    }
+
+    Student(String name, int age) {
+
+        this.name = name;
+        this.age = age;
+
+    }
+
+    void display() {
+
+        System.out.println(name + " " + age);
+
+    }
+}
