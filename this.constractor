@@ -1,0 +1,33 @@
+public class Student {
+
+    public static void main(String[] args) {
+
+        Student s1 = new Student("Tabrej", 19);
+
+        s1.display();
+
+    }
+
+    String name;
+    int age;
+
+    Student() {
+
+        this("Unknown", 0);
+
+    }
+
+    Student(String name, int age) {
+
+        this.name = name;
+        this.age = age;
+
+    }
+
+    void display() {
+
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+
+    }
+}
