@@ -1,0 +1,20 @@
+public class mobile {
+    public static void main(String[] args) {
+        mobile m1 = new mobile("oppo","a57",15000);
+        m1.display();
+    }
+    String name;
+    String model;
+    int price;
+
+    mobile(String name, String model, int price){
+        this.name = name;
+        this.model = model;
+        this.price = price;
+    }
+void display(){
+    System.out.println("name = " + name);
+    System.out.println("model = " + model);
+    System.out.println("price = " + price);
+}
+}
